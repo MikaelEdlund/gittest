@@ -1,8 +1,8 @@
 
 #include "bi_ident.h"
-BI_IDENT("@(#)$Header: /home/nfs/jkjb/git2/jkjb_tools/test/micke.c master 2021-02-09 14:27:02 jkjb Exp $");
+BI_IDENT("@(#)$Header: /tmp/git1/gittest/micke.c master 2021-02-09 19:19:26 micke Exp $");
 
-/*aasdasdjkasldsfdfdasasd  */
+/*aasldsfdfdasasd  */
 
 
 

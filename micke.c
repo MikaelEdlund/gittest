@@ -1,6 +1,6 @@
 
-#include "bi_ident.h"
-BI_IDENT("@(#)$Header: /tmp/git1/gittest/micke.c master 2021-02-09 19:35:30 micke Exp $");
+#include "ident.h"
+IDENT("@(#)$Header: /tmp/git1/gittest/micke.c master 2021-02-09 19:49:16 micke Exp $");
 
 /*aasldsfdfdasasd  */
 

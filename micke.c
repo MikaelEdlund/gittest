@@ -1,8 +1,8 @@
 
 #include "ident.h"
-IDENT("@(#)$Header: /tmp/git1/gittest/micke.c master 2021-02-09 19:49:16 micke Exp $");
+IDENT("@(#)$Header: /tmp/git/gittest/micke.c master 2021-02-09 20:10:34 micke Exp $");
 
-/*aasldsfdfdasasd  */
+/* aasldsfdfdasasd  */
 
 
 

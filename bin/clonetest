@@ -1,0 +1,22 @@
+#!/bin/bash
+
+rm -rf /tmp/git
+mkdir  /tmp/git
+cd     /tmp/git
+git clone git@github.com:MikaelEdlund/gittest.git > /dev/null 2>&1
+cd gittest
+
+i=0
+
+git config --local filter.micke.clean "ident %f"
+
+while [[ "$(git status | grep modified | wc -l)" != "0" ]]
+do
+  ((i=i+1))
+  git config --unset filter.micke.clean
+  git status > /dev/null
+  sleep 0.1
+  git config --local filter.micke.clean "ident %f"
+done
+
+echo "$i"

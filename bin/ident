@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use POSIX qw(strftime);
+
+my $date = strftime "%F %T",localtime;
+
+my $gitroot = `git rev-parse --show-toplevel 2> /dev/null`;
+chomp($gitroot);
+
+my $branch = `git rev-parse --abbrev-ref HEAD 2> /dev/null`;
+chomp($branch);
+
+my $filename = $gitroot . "/" . $ARGV[0];
+chomp($filename);
+
+while (<>) {
+   my $row = $_;
+   $row =~ s/\$Header:.*\$/\$Header: $filename $branch $date $ENV{'LOGNAME'} Exp \$/;
+   print $row
+}
+
